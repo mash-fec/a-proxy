@@ -11,6 +11,7 @@ module.exports = {
     'react/prop-types': 'off',
     'no-underscore-dangle': 'off',
     'no-unused-vars': 'off',
-    'array-callback-return': 'off'
+    'array-callback-return': 'off',
+    'import/no-extraneous-dependencies': 'off'
   }
 };
