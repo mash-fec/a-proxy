@@ -7,7 +7,9 @@ module.exports = {
     homePics: '../j-service/client/src/app.jsx',
     description: '../m-service/client/index.jsx',
     reviews: '../v-service/client/app.jsx',
-    moreHomes: '../a-service/client/MoreHomes.jsx'
+    moreHomes: '../a-service/client/MoreHomes.jsx',
+    booking: '../m-booking/client/booking.jsx',
+    nav: '../m-nav/client/nav.jsx'
   },
   externals: {
     'styled-components': 'styled'

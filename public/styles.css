@@ -1,0 +1,26 @@
+#booking {
+  position: sticky;
+  top: 5%;
+  right: 15%;
+  float: right;
+}
+
+#container {
+  overflow: auto;
+}
+
+#descriptions {
+  position: relative;
+  right: 20%;
+  margin-left: 30%;
+  margin-right: 2%;
+  overflow: auto;
+}
+
+#app {
+  position: relative;
+  right: 20%;
+  margin-left: 28%;
+  margin-right: 1%;
+  overflow: auto;
+}
