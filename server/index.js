@@ -27,6 +27,10 @@ app.use(express.static(path.join(__dirname, '../public')));
 //   proxy.web(req, res, { target: 'http://localhost:3000' });
 // });
 
+app.all('/totalReviews', (req, res) => {
+  proxy.web(req, res, { target: 'http://reviews.pfuzgfpajh.us-west-2.elasticbeanstalk.com/' });
+});
+
 app.all('/morehomes', (req, res) => {
   proxy.web(req, res, { target: 'http://52.88.112.117:3000/' });
 });
