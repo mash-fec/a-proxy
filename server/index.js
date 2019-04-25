@@ -11,17 +11,17 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../public')));
 
-app.all('/house_images', (req, res) => {
-  proxy.web(req, res, { target: 'http://localhost:3003' });
-});
+// app.all('/house_images', (req, res) => {
+//   proxy.web(req, res, { target: 'http://localhost:3003' });
+// });
 
-app.all('/description', (req, res) => {
-  proxy.web(req, res, { target: 'http://localhost:3210' });
-});
+// app.all('/description', (req, res) => {
+//   proxy.web(req, res, { target: 'http://localhost:3210' });
+// });
 
-app.all('/totalReviews', (req, res) => {
-  proxy.web(req, res, { target: 'http://localhost:3004' });
-});
+// app.all('/totalReviews', (req, res) => {
+//   proxy.web(req, res, { target: 'http://localhost:3004' });
+// });
 
 // app.all('/morehomes', (req, res) => {
 //   proxy.web(req, res, { target: 'http://localhost:3000' });
