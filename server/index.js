@@ -12,19 +12,19 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../public')));
 
 app.all('/house_images', (req, res) => {
-  proxy.web(req, res, { target: 'http://localhost:3003' });
+  proxy.web(req, res, { target: 'http://52.87.228.239:3003/' });
 });
 
 app.all('/description', (req, res) => {
-  proxy.web(req, res, { target: 'http://localhost:3210' });
+  proxy.web(req, res, { target: 'http://18.188.174.153:3210/' });
 });
 
 app.all('/totalReviews', (req, res) => {
-  proxy.web(req, res, { target: 'http://localhost:3004' });
+  proxy.web(req, res, { target: 'http://reviews.pfuzgfpajh.us-west-2.elasticbeanstalk.com/' });
 });
 
 app.all('/morehomes', (req, res) => {
-  proxy.web(req, res, { target: 'http://localhost:3000' });
+  proxy.web(req, res, { target: 'http://52.27.3.181:3000/' });
 });
 
 const server = app.listen(port, console.log(`Listening on port ${port}`));
