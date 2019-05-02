@@ -12,11 +12,11 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../public')));
 
 app.all('/house_images', (req, res) => {
-  proxy.web(req, res, { target: 'http://ec2-54-175-40-167.compute-1.amazonaws.com:3003/' });
+  proxy.web(req, res, { target: 'http://52.87.228.239:3003/' });
 });
 
 app.all('/description', (req, res) => {
-  proxy.web(req, res, { target: 'http://18.220.111.23:3210/' });
+  proxy.web(req, res, { target: 'http://18.188.174.153:3210/' });
 });
 
 app.all('/totalReviews', (req, res) => {
@@ -24,7 +24,7 @@ app.all('/totalReviews', (req, res) => {
 });
 
 app.all('/morehomes', (req, res) => {
-  proxy.web(req, res, { target: 'http://52.88.112.117:3000/' });
+  proxy.web(req, res, { target: 'http://52.27.3.181:3000/' });
 });
 
 const server = app.listen(port, console.log(`Listening on port ${port}`));
