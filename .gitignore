@@ -23,11 +23,3 @@ coverage
 # Compiled Dirs (http://nodejs.org/api/addons.html)
 build/
 dist/
-
-public/description.js
-public/homePics.js
-public/moreHomes.js
-public/reviews.js
-public/vendor.js
-public/booking.js
-public/nav.js
