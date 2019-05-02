@@ -1,4 +1,6 @@
 const path = require('path');
+const CompressionPlugin = require('compression-webpack-plugin');
+const BrotliPlugin = require('brotli-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -41,7 +43,22 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'public'),
+    path: path.resolve(__dirname, 'public/build'),
     chunkFilename: '[id].[chunkhash].js'
-  }
+  },
+  plugins: [
+    new CompressionPlugin({
+      filename: '[path].gz[query]',
+      algorithm: 'gzip',
+      test: /\.js$|\.css$||\.html$/,
+      threshold: 10240,
+      minRatio: 0.7
+    }),
+    new BrotliPlugin({
+      filename: '[path].br[query]',
+      test: /\.js$|\.css$||\.html$/,
+      threshold: 10240,
+      minRatio: 0.7
+    })
+  ],
 };
