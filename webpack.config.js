@@ -6,12 +6,18 @@ module.exports = {
   mode: 'development',
   entry: {
     vendor: ['styled-components'],
-    homePics: '../j-service/client/src/app.jsx',
-    description: '../m-service/client/index.jsx',
-    reviews: '../v-service/client/app.jsx',
-    moreHomes: '../a-service/client/MoreHomes.jsx',
-    booking: '../m-booking/client/booking.jsx',
-    nav: '../m-nav/client/nav.jsx'
+    // homePics: '../j-service/client/src/app.jsx',
+    // description: '../m-service/client/index.jsx',
+    // reviews: '../v-service/client/app.jsx',
+    // moreHomes: '../a-service/client/MoreHomes.jsx',
+    // booking: '../m-booking/client/booking.jsx',
+    // nav: '../m-nav/client/nav.jsx'
+    homePics: 'https://s3-us-west-1.amazonaws.com/mashbnb/module-jsx-files/j-service-app.jsx',
+    description: 'https://s3-us-west-1.amazonaws.com/mashbnb/module-jsx-files/m-service-index.jsx',
+    reviews: '.https://s3-us-west-1.amazonaws.com/mashbnb/module-jsx-files/v-service-app.jsx',
+    moreHomes: 'https://s3-us-west-1.amazonaws.com/mashbnb/module-jsx-files/MoreHomes.jsx',
+    booking: 'https://s3-us-west-1.amazonaws.com/mashbnb/module-jsx-files/booking.jsx',
+    nav: 'https://s3-us-west-1.amazonaws.com/mashbnb/module-jsx-files/nav.jsx'
   },
   externals: {
     'styled-components': 'styled'
